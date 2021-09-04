@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS Framework -->
+    <link href="../tailwind.css" rel="stylesheet">
+    <title>SpaceX</title>
+</head>
+
+<body>
+    <!-- Navbar starts -->
+    <nav style="padding-top: 1.5rem; padding-bottom: 1.5rem; padding-left: 3rem; padding-right: 3rem;"
+        class="fixed z-10 top-0 left-0 w-full bg-black flex justify-between items-center shadow-2xl duration-300">
+        <a href="./">
+            <img src="../../images/logo0.png" class="w-48" alt="Space X"> <!-- Logo -->
+        </a>
+        <!-- Desktop menu start -->
+        <div class="hidden md:flex font-light gap-10">
+            <a class="navlink text-sm uppercase hover:scale-105 transform text-gray-300 hover:text-white duration-200"
+                href="./ethics">Ethics</a>
+            <a class="navlink text-sm uppercase hover:scale-105 transform text-gray-300 hover:text-white duration-200"
+                href="./responsibility">Responsibility</a>
+            <a class="navlink text-sm uppercase hover:scale-105 transform text-gray-300 hover:text-white duration-200"
+                href="./commitment">Commitment</a>
+        </div>
+        <!-- Desktop menu end -->
+        <!-- Mobile menu / sidebar start -->
+        <div id="hamburger" class="md:hidden cursor-pointer w-6 h-6 flex flex-col justify-between items-center">
+            <div class="w-full h-1 rounded-full bg-white"></div>
+            <div class="w-full h-1 rounded-full bg-white"></div>
+            <div class="w-full h-1 rounded-full bg-white"></div>
+        </div>
+        <div id="sidebar"
+            class="-right-1/2 ease-out shadow-2xl flex items-center h-screen md:hidden flex-col fixed top-0 w-1/2 border-l bg-black py-5 font-light gap-8 duration-300 ">
+            <div id="closesidebar" class="w-full flex justify-end px-5">
+                <img src="../../images/x-mark1.png" alt="close"
+                    class="w-10 h-10 rounded-full filter invert cursor-pointer p-1 transform hover:scale-105 duration-300" />
+            </div>
+            <a href="./ethics" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+                <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
+                    Ethics</div>
+                <hr class="w-5/6 mt-1 w-full bordet-t" />
+            </a>
+            <a href="./responsibility" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+                <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
+                    Responsibility</div>
+                <hr class="w-5/6 mt-1 w-full bordet-t" />
+            </a>
+            <a href="./commitment" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+                <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
+                    Commitment</div>
+                <hr class="w-5/6 mt-1 w-full bordet-t" />
+            </a>
+        </div>
+        <!-- Mobile menu / sidebar end -->
+    </nav>
+    <!-- navbar end -->
+    <!-- Main content start -->
+    <main class="py-20 px-4 w-full min-h-screen">
+    </main>
+    <!-- Main content end -->
+    <!-- Footer start -->
+    <footer>
+
+    </footer>
+    <!-- footer end -->
+    <!-- JS file -->
+    <script src="../index.js"></script>
+</body>
+
+</html>
