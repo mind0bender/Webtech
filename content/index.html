@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind CSS Framework -->
     <link href="./tailwind.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+
     <title>SpaceX</title>
 </head>
 
 <body class="select-text">
+    <div class="fixed top-20 right-10 text-yellow-400 text-2xl font-black bg-black p-2 rounded-md">ASURYA</div>
     <!-- Navbar starts -->
     <nav style="padding-top: 1.5rem; padding-bottom: 1.5rem; padding-left: 3rem; padding-right: 3rem;"
         class="border-gradient-x border-b-8 fixed z-10 top-0 left-0 w-full bg-gray-900 flex justify-between items-center shadow-2xl duration-300">
@@ -38,7 +44,7 @@
             <div class="w-full h-1 rounded-full bg-white"></div>
         </div>
         <div id="sidebar"
-            class="-right-1/2 ease-out shadow-2xl flex items-center h-screen md:hidden flex-col fixed top-0 w-1/2 border-l bg-gray-900 py-5 font-light gap-8 duration-300 ">
+            class="-right-2/3 ease-out shadow-2xl flex items-center h-screen md:hidden flex-col fixed top-0 w-2/3 border-l bg-gray-900 py-5 font-light gap-8 duration-300 ">
             <div class="w-full flex justify-end px-5">
                 <!-- cross image from flaticon -->
                 <img id="closesidebar" src="../images/x-mark1.png" alt="close" class="select-none w-10 h-10 rounded-full filter invert cursor-pointer p-1 transform hover:scale-105
@@ -68,22 +74,157 @@
     </nav>
     <!-- navbar end -->
     <!-- School Code & go to top -->
-    <div id="gototop"
+    <a href="#" id="gototop"
         class="border-2 cursor-pointer justify-center items-center fixed -bottom-40 right-10 w-14 h-14 bg-gray-900 rounded-full animate-bounce duration-300">
+        <!-- Image from flaticon-Freepik -->
         <img src="../images/arrow3.png" alt="Go to top"
             class="select-none w-full h-full filter invert p-4 transform rotate-180 hover:-translate-y-2 duration-300" />
-    </div>
+    </a>
+
     <!-- Main content start -->
-    <main class="py-20 px-4 w-full min-h-screen">
-        <div class="flex gap-10 flex-col lg:flex-row w-full py-40 bggra justify-between items-center">
-            <div
-                class="handwritten flex justify-center items-center gap-8 w-full lg:w-2/3 text-center text-6xl font-black p-4">
-                Exploring the future <img src="../images/rocket7.png" alt="rocket" class="w-20" draggable="false">
+    <main class="pt-20 w-full min-h-screen">
+        <!-- Image from spacex's instagram page -->
+        <div style="z-index: -10;" class="w-full flex h-screen fixed top-16 left-0 justify-center items-center">
+            <div style="background-image: url(../images/fireinair8.jpg);"
+                class="bg-cover w-full h-full shadow-inner shadow-2xl" alt="Rocket flying">
             </div>
-            <div class="w-full lg:w-1/3 flex justify-center items-center">Lola</div>
+        </div>
+        <div class="flex gap-10 flex-col lg:flex-row w-full py-40 justify-between items-center">
+            <div
+                class="select-none handwritten uppercase flex flex-col md:flex-row justify-center items-center gap-8 w-full lg:w-2/3 text-center text-6xl text-white font-black p-4">
+                Exploring the future
+                <!-- Image from flaticon-Freepik -->
+                <img src="../images/rocket7.png" alt="rocket"
+                    class="w-20 hover:translate-x-10 hover:-translate-y-10 transform duration-300" draggable="false">
+            </div>
+            <div class="w-full lg:w-1/3 flex justify-center items-center text-3xl">
+                <button
+                    class="bg-white px-4 py-2 rounded-full hover:bg-black hover:text-white duration-300 cursor-pointer
+                    transform hover:border-white border-black border-2 hover:translate-y-2 hover:scale-95 focus:ring-white focus:ring-4 focus:ring-opacity-50">
+                    Join us on our journey
+                </button>
+            </div>
+        </div>
+        <div style="border-radius: 30% 70% 27% 73% / 56% 12% 88% 44%;"
+            class="bg-gradient-to-bl from-pink-500 to-purple-600 w-96 h-96 text-center flex justify-center items-center transform translate-x-3/4 translate-y-3/4">
+            Lola
+        </div>
+        <div style="border-radius: 100% 0 100px 0 / 300px 100% 0 83%;"
+            class="w-full min-h-screen bg-white mt-10 pt-80 px-4 pb-20 lg:pt-96 text-justify">
+            <div class="lg:mt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis recusandae, architecto quibusdam
+                quisquam fuga consectetur error. Praesentium officiis nemo maiores accusamus sit mollitia vero sapiente
+                possimus ut saepe officia doloribus alias doloremque, fugit, eligendi rerum, enim ipsa reprehenderit?
+                Asperiores beatae quo quaerat quam labore aliquam, molestias facilis explicabo obcaecati in, minus ipsam
+                molestiae! Hic cum quos deleniti, in tenetur veniam ex dignissimos excepturi earum. Alias dolores nam
+                doloribus ipsum necessitatibus ex mollitia assumenda eaque obcaecati. Sapiente dolorem, esse perferendis
+                ex
+                odit dicta fuga doloribus maiores aliquid reiciendis eveniet quibusdam sequi odio ipsam assumenda sint
+                reprehenderit tenetur quasi aperiam cum ea? Quia natus accusantium itaque cum debitis iusto sint
+                repellat
+                aut corporis? Doloremque, dignissimos quia culpa, libero laudantium fugit quidem, obcaecati cupiditate
+                officia earum ea consequatur impedit velit aspernatur enim dolore voluptatum repellendus? Repellendus
+                explicabo eos commodi doloremque nisi repellat officia doloribus veritatis nihil numquam libero
+                voluptatum
+                quis pariatur, incidunt quisquam, ipsam rerum aliquam. Blanditiis tempora repellendus fuga expedita.
+                Maiores
+                doloremque minima magnam rem delectus, debitis aspernatur, magni distinctio adipisci ipsa quos deserunt
+                similique quam dignissimos culpa tempora saepe sed porro temporibus non suscipit rerum harum. Eaque,
+                distinctio amet voluptatem sequi error nemo quae temporibus quis iusto laboriosam sapiente officia odit
+                repellat quaerat non voluptatum architecto numquam. Voluptate corporis hic, consequatur quae debitis
+                facere
+                fuga at quia maxime laudantium officia eius voluptatem molestias incidunt facilis, earum numquam sed
+                neque
+                enim ea perspiciatis quos id! Corrupti similique, atque esse reiciendis at earum, consequatur obcaecati
+                sint
+                voluptatibus, officia vitae? Molestiae illum odio quas eveniet repudiandae nihil similique tempora
+                consequuntur facilis, et excepturi laborum, cum temporibus ex laudantium! At natus nemo doloremque eum
+                eos
+                eaque ut veritatis. Ipsa saepe odit, facere dolorum id voluptate nesciunt repudiandae itaque, numquam
+                aperiam debitis natus facilis provident! Saepe cum laboriosam incidunt magnam sit soluta animi
+                recusandae
+                enim, voluptate sint rem necessitatibus voluptatibus dolor nisi doloribus nihil dignissimos. Excepturi
+                cupiditate possimus molestias delectus odit commodi qui ducimus eos id quasi earum iusto odio ab aut
+                voluptatum quae culpa rerum esse, modi necessitatibus ut harum beatae. Placeat aperiam reiciendis
+                tempore
+                sunt nam ad iusto, explicabo alias culpa? Quia dolores asperiores officia assumenda qui, atque,
+                accusantium
+                cupiditate perferendis quo ut eligendi id temporibus vero cumque voluptas iure magni totam architecto in
+                eveniet ipsum minima incidunt a explicabo. Rem quas doloribus alias veniam! Repellat sequi nam corporis
+                incidunt eius iure, at ipsum aliquid neque facere mollitia cumque beatae magni non, architecto maxime,
+                labore aliquam totam expedita! Voluptas assumenda enim impedit corrupti aut blanditiis ullam facere
+                voluptate dolorem totam nobis at veritatis, asperiores esse quis! Repellendus, voluptatum. Soluta quos
+                quo
+                id amet iusto, similique eum quidem! Eligendi aliquid voluptates repellat vero quibusdam provident
+                voluptatum excepturi magnam architecto fugit, dolores, accusantium in quod neque voluptate ut possimus?
+                Ratione, id harum rerum, ullam esse fugit tempora voluptates accusamus cupiditate delectus
+                reprehenderit!
+                Animi, quo aliquid magnam temporibus, asperiores at non harum saepe neque veniam impedit eius iure
+                soluta!
+                Illo adipisci sunt quidem accusantium neque recusandae magnam placeat debitis aut laudantium velit
+                praesentium nisi, repellat eaque distinctio maiores eum itaque fugiat blanditiis. Praesentium aliquam
+                temporibus unde vel blanditiis soluta ullam saepe doloribus incidunt. Repudiandae repellendus ex rem
+                eius?
+                Obcaecati mollitia nobis quisquam commodi, accusantium tempora alias minus delectus ab dolorem nemo amet
+                numquam incidunt voluptatum voluptatibus, debitis officia voluptas corrupti eius doloribus porro veniam.
+                Ab
+                soluta exercitationem neque fugiat, dignissimos ea error modi sed ducimus, quibusdam perspiciatis
+                voluptatibus expedita pariatur? Laboriosam velit ullam facilis voluptatum error neque quaerat
+                voluptatibus
+                deleniti ipsam, rerum ex in placeat necessitatibus sit amet iste reprehenderit labore molestiae dolorem
+                quos
+                aperiam quisquam repudiandae. Mollitia eos molestiae modi doloribus saepe incidunt nam magnam iusto
+                voluptas, est sed fugit repellat laborum et error rem quos asperiores laudantium aperiam culpa cumque
+                quasi
+                non! Earum harum est ex perspiciatis voluptatum officiis maxime soluta. Illo voluptate et vitae eos
+                vero.
+                Quam quod, asperiores illum ullam voluptatem dolore, quas commodi rerum veniam unde minima assumenda,
+                voluptate perferendis quos iusto expedita nam cumque praesentium esse similique ipsam ipsum nisi non.
+                Autem
+                quibusdam nam amet optio sunt ex officia tenetur ipsum voluptas cupiditate. Nostrum praesentium
+                repudiandae
+                rem eveniet alias ad accusantium illum laborum deserunt atque odio voluptate, id blanditiis vero eum
+                molestias quia soluta, labore unde? Illo eum cupiditate dolorum laudantium quisquam quae eos ipsum,
+                necessitatibus vel nostrum, incidunt quam omnis voluptatem exercitationem facilis praesentium temporibus
+                libero amet vitae voluptate? Magnam aut facere, pariatur animi cupiditate eveniet? Nisi, labore. Aut
+                nesciunt modi aspernatur ad sint exercitationem voluptatum facere aliquid debitis excepturi temporibus,
+                architecto ut quidem quod quae iure ea praesentium, perferendis voluptas labore? Iure excepturi
+                perferendis
+                ex totam. Eius harum distinctio suscipit cum, hic sunt reprehenderit nam aliquam voluptatum inventore
+                architecto, deserunt quas incidunt. Eos nam dolor fugiat, qui necessitatibus sed beatae ducimus
+                doloremque.
+                Deleniti repellat dolores sequi consequuntur aspernatur accusamus nam repudiandae aliquid consequatur
+                error
+                deserunt ipsum numquam adipisci perspiciatis reiciendis unde nesciunt dolore, officia laborum eius?
+                Vitae
+                perferendis facere soluta expedita porro modi, quas voluptatem ut explicabo magnam amet dolores
+                adipisci.
+                Vel rerum nostrum totam animi voluptas maxime praesentium, provident quo corporis ab distinctio vero
+                quae
+                repellat! Et corrupti quasi pariatur dolorum beatae sed id, tempora autem, similique sequi delectus
+                obcaecati maiores ipsa, impedit totam ipsam ex quisquam commodi voluptas recusandae! Provident impedit
+                porro
+                explicabo doloremque quos rem blanditiis saepe temporibus, consectetur, nisi vitae fuga expedita nostrum
+                eius totam autem natus placeat esse libero? Voluptatum pariatur officia reiciendis non. Dolor, ipsam
+                eaque
+                unde veniam corporis, pariatur earum voluptas doloremque quis cum quo amet quibusdam porro. Eius,
+                mollitia
+                temporibus qui tenetur quis quo alias iusto consequatur vitae hic suscipit, rerum laborum cupiditate
+                esse?
+                Voluptas inventore repudiandae excepturi, recusandae est quos doloribus nobis aperiam asperiores
+                corporis
+                maxime placeat dolores eos labore quae sed a libero. Commodi vel quia nesciunt sint accusamus, nobis
+                laborum
+                excepturi, accusantium atque molestiae esse dolore autem eveniet obcaecati deserunt rerum architecto aut
+                quae quibusdam sunt natus porro? Dolorum, ea? Velit quam sed explicabo repellendus consectetur
+                consequuntur
+                culpa, voluptatibus illum, mollitia dolorem nisi sunt eius natus ex consequatur possimus aut ipsum esse
+                harum. Quasi accusamus dolorem quibusdam.
+            </div>
         </div>
     </main>
     <!-- Main content end -->
+
     <!-- Footer start -->
     <footer class="bg-gray-900 w-full pb-20 flex flex-col justify-center items-center">
         <div class="w-full h-6 bg-white rounded-b-3xl"></div>

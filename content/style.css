@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik:wght@300&display=swap");
+
+:root {
+  --theme-bg-color: rgba(17, 24, 39, 255);
+}
+
 .social:hover {
   padding: 0.6rem;
   margin: 0;
