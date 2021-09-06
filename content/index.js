@@ -1,9 +1,13 @@
+AOS.init();
+
 const nav = document.querySelector("nav");
 const sidebar = document.getElementById("sidebar");
 const closeBtn = document.getElementById("closesidebar");
 const openBtn = document.getElementById("hamburger");
 const goToTop = document.getElementById("gototop");
 const sideCover = document.getElementById("sidecover");
+
+$(".carousel").carousel();
 
 const openSidebar = () => {
   sidebar.classList.remove("-right-2/3");

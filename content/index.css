@@ -1,7 +1,0 @@
-.triangle-l {
-  width: 0;
-  height: 0;
-  border-left: calc(95vw - 1rem) solid transparent;
-  border-right: 50vw solid transparent;
-  border-bottom: 20rem solid #fff;
-}
