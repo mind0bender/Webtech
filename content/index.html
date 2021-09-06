@@ -10,6 +10,12 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    // Add the new slick-theme.css if you want the default styling
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -83,15 +89,15 @@
 
     <!-- Main content start -->
     <main class="pt-20 w-full min-h-screen">
-        <!-- Image from spacex's instagram page -->
         <div style="z-index: -10;" class="w-full flex h-screen fixed top-16 left-0 justify-center items-center">
-            <div style="background-image: url(../images/fireinair8.jpg);"
+            <!-- Image from spacex.com page -->
+            <div style="background-image: url(../images/satalite9.webp);"
                 class="bg-cover w-full h-full shadow-inner shadow-2xl" alt="Rocket flying">
             </div>
         </div>
         <div class="flex gap-10 flex-col lg:flex-row w-full py-40 justify-between px-20 items-center">
             <div
-                class="select-none handwritten uppercase flex flex-col md:flex-row justify-center items-center gap-8 w-full lg:w-2/3 text-center text-6xl text-white font-black p-4">
+                class="select-none uppercase flex flex-col md:flex-row justify-center items-center gap-8 w-full lg:w-2/3 text-center text-5xl lg:text-6xl text-white font-black p-4">
                 Exploring the future
                 <!-- Image from flaticon-Freepik -->
                 <img src="../images/rocket7.png" alt="rocket"
@@ -101,44 +107,40 @@
                 <button
                     class="bg-white px-4 py-2 rounded-full hover:bg-black hover:text-white duration-300 cursor-pointer
                     transform hover:border-white border-black border-2 hover:translate-y-2 hover:scale-95 focus:ring-white focus:ring-4 focus:ring-opacity-50">
-                    Join us on our journey
+                    Welcome to SpaceX
                 </button>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="700" style="border-radius: 30% 70% 27% 73% / 56% 12% 88% 44%;"
-            class="text-white bg-gradient-to-bl from-pink-500 to-purple-600 w-96 h-96 text-center flex justify-center items-center relative left-80 top-80 text-3xl">
-            There's a trillion aliens cooler than you.
+        <div class="w-full flex justify-end">
+            <div data-aos="fade-up" data-aos-duration="700" style="border-radius: 30% 70% 27% 73% / 56% 12% 88% 44%;"
+                class="text-white bg-gradient-to-bl from-pink-500 to-purple-600 w-96 h-96 text-center flex justify-center items-center relative right-20 top-80 text-3xl">
+                There's a trillion aliens cooler than you.
+            </div>
         </div>
         <div style="border-radius: 100% 0 100px 0 / 300px 100% 0 83%;"
             class="w-full min-h-screen bg-white mt-10 pt-80 px-4 pb-20 lg:pt-96 text-justify">
-            <div class="lg:mt-10">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="..." alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+            <div id="carousel" class="center fle justify-center items-center">
+                <div data-aos="flip-left"
+                    class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
+                    style="background-image: url(../images/elonmusk10.jpg);"></div>
+                <div data-aos="flip-left"
+                    class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
+                    style="background-image: url(../images/spacecraft11.jpeg);">
+                </div>
+                <div data-aos="flip-left"
+                    class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
+                    style="background-image: url(../images/rocket12.jpg);">
+                </div>
+                <div data-aos="flip-left"
+                    class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
+                    style="background-image: url(../images/spacecraft13.jpeg);">
+                </div>
+                <div data-aos="flip-left"
+                    class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
+                    style="background-image: url(../images/fireinair8.jpg);">
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <!-- Main content end -->

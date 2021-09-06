@@ -6,8 +6,35 @@ const closeBtn = document.getElementById("closesidebar");
 const openBtn = document.getElementById("hamburger");
 const goToTop = document.getElementById("gototop");
 const sideCover = document.getElementById("sidecover");
+const carousel = document.getElementById("carousel");
 
-$(".carousel").carousel();
+$(".center").slick({
+  centerMode: true,
+  centerPadding: "60px",
+  slidesToShow: 3,
+  autoplay: true,
+  autoplaySpeed: 500,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
 
 const openSidebar = () => {
   sidebar.classList.remove("-right-2/3");
