@@ -8,32 +8,35 @@ const goToTop = document.getElementById("gototop");
 const sideCover = document.getElementById("sidecover");
 const carousel = document.getElementById("carousel");
 
-$(".center").slick({
-  centerMode: true,
-  centerPadding: "60px",
+$("#carousel").slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
   slidesToShow: 3,
-  autoplay: true,
-  autoplaySpeed: 500,
+  slidesToScroll: 1,
+  infinite: true,
   responsive: [
     {
       breakpoint: 768,
       settings: {
-        arrows: true,
+        arrows: false,
         centerMode: true,
         centerPadding: "40px",
-        slidesToShow: 3,
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: true,
+        arrows: false,
         centerMode: true,
         centerPadding: "40px",
         slidesToShow: 1,
       },
     },
   ],
+  autoplaySpeed: 1000,
+  autoplay: true,
 });
 
 const openSidebar = () => {
