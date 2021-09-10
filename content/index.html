@@ -5,18 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CSS Framework -->
-    <link href="./tailwind.css" rel="stylesheet" />
-    <!-- AOS -->
+    <!-- Tailwind CSS Framework CDN -->
+    <link href="tailwind.css" rel="stylesheet" />
+    <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Jquery -->
+    <!-- Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Slick carousel -->
+    <!-- Slick carousel CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,23 +28,25 @@
     <title>SpaceX</title>
 </head>
 
-<body class="select-text">
-    <div class="fixed top-20 right-10 text-yellow-400 text-2xl font-black bg-black p-2 rounded-md">असुर्य</div>
+<body class="select-text select-text">
+    <div
+        class="z-50 fixed transform -skew-x-6 top-20 right-10 text-yellow-400 text-2xl font-black bg-black p-2 rounded-sm">
+        असुर्य</div>
     <!-- Navbar starts -->
     <nav style="padding-top: 1.5rem; padding-bottom: 1.5rem; padding-left: 3rem; padding-right: 3rem;"
-        class="border-gradient-x border-b-8 fixed z-10 top-0 left-0 w-full bg-gray-900 flex justify-between items-center shadow-2xl duration-300">
-        <a href="./">
+        class="z-50 border-gradient-x border-b-8 fixed z-10 top-0 left-0 w-full bg-black flex justify-between items-center shadow-2xl duration-300">
+        <a href="index.html">
             <!-- Logo -->
             <img src="../images/logo0.png" class="select-none w-48" alt="Space X">
         </a>
         <!-- Desktop menu start -->
         <div class="hidden md:flex font-light gap-10">
-            <a class="navlink text-sm uppercase hover:scale-105 transform text-gray-300 hover:text-white duration-200"
-                href="./ethics">Ethics</a>
-            <a class="navlink text-sm uppercase hover:scale-105 transform text-gray-300 hover:text-white duration-200"
-                href="./responsibility">Responsibility</a>
-            <a class="navlink text-sm uppercase hover:scale-105 transform text-gray-300 hover:text-white duration-200"
-                href="./commitment">Commitment</a>
+            <a class="navlink text-sm font-extralight uppercase transform text-gray-300 hover:text-white duration-200"
+                href="ethics/index.html">Ethics</a>
+            <a class="navlink text-sm font-extralight uppercase transform text-gray-300 hover:text-white duration-200"
+                href="about/index.html">about</a>
+            <a class="navlink text-sm font-extralight uppercase transform text-gray-300 hover:text-white duration-200"
+                href="commitment/index.html">Commitment</a>
         </div>
         <!-- Desktop menu end -->
         <!-- Mobile menu / sidebar start -->
@@ -56,26 +57,26 @@
             <div class="w-full h-1 rounded-full bg-white"></div>
         </div>
         <div id="sidebar"
-            class="-right-2/3 ease-out shadow-2xl flex items-center h-screen md:hidden flex-col fixed top-0 w-2/3 border-l bg-gray-900 py-5 font-light gap-8 duration-300 ">
+            class="-right-2/3 ease-out shadow-2xl flex items-center h-screen md:hidden flex-col fixed top-0 w-2/3 border-l bg-black py-5 font-light gap-8 duration-300 ">
             <div class="w-full flex justify-end px-5">
                 <!-- cross image from flaticon -->
                 <img id="closesidebar" src="../images/x-mark1.png" alt="close" class="select-none w-10 h-10 rounded-full filter invert cursor-pointer p-1 transform hover:scale-105
                     duration-300" />
             </div>
 
-            <a href="./ethics" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+            <a href="ethics/index.html" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
                 <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
                     Ethics
                 </div>
                 <hr class="w-5/6 mt-1 w-full bordet-t" />
             </a>
-            <a href="./responsibility" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+            <a href="about/index.html" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
                 <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
-                    Responsibility
+                    about
                 </div>
                 <hr class="w-5/6 mt-1 w-full bordet-t" />
             </a>
-            <a href="./commitment" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+            <a href="commitment/index.html" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
                 <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
                     Commitment
                 </div>
@@ -87,33 +88,30 @@
     <!-- navbar end -->
     <!-- School Code & go to top -->
     <a href="#" id="gototop"
-        class="border-2 cursor-pointer justify-center items-center fixed -bottom-40 right-10 w-14 h-14 bg-gray-900 rounded-full animate-bounce duration-300">
+        class="border-2 z-50 cursor-pointer justify-center items-center fixed -bottom-40 right-10 w-14 h-14 bg-black rounded-full animate-bounce duration-300">
         <!-- Image from flaticon-Freepik -->
         <img src="../images/arrow3.png" alt="Go to top"
             class="select-none w-full h-full filter invert p-4 transform rotate-180 hover:-translate-y-2 duration-300" />
     </a>
 
     <!-- Main content start -->
-    <main class="pt-20 w-full min-h-screen">
+    <main class=" w-full min-h-screen overflow-x-hidden">
         <div style="z-index: -10;" class="w-full flex h-screen fixed top-16 left-0 justify-center items-center">
             <!-- Image from spacex.com page -->
             <div style="background-image: url(../images/satalite9.webp);"
                 class="bg-cover w-full h-full shadow-inner shadow-2xl" alt="Rocket flying">
             </div>
         </div>
-        <div class="flex gap-10 flex-col lg:flex-row w-full py-40 justify-between px-20 items-center">
-            <div
-                class="select-none uppercase flex flex-col md:flex-row justify-center items-center gap-8 w-full lg:w-2/3 text-center text-5xl lg:text-6xl text-white font-black p-4">
-                Exploring the future
-                <!-- Image from flaticon-Freepik -->
-                <img src="../images/rocket7.png" alt="rocket"
-                    class="w-20 hover:translate-x-10 hover:-translate-y-10 transform duration-300" draggable="false">
+        <div class="w-full h-screen p-10 flex flex-col justify-end gap-16 py-40">
+            <div class="uppercase break-words w-3/4 text-6xl font-black text-white">Exploring the future
             </div>
-            <div class="w-full lg:w-1/3 flex justify-center items-center text-3xl">
-                <button
-                    class="bg-white px-4 py-2 hover:bg-black hover:text-white duration-300 cursor-pointer rounded-sm hover:border-white border-black border-2 focus:ring-white focus:ring-4 focus:ring-opacity-50">
-                    Welcome to SpaceX
-                </button>
+            <div class="overflow-hidden">
+                <a href="#joinus">
+                    <div
+                        class="group w-1/2 md:w-1/4 btn px-10 duration-300 cursor-pointer hover:text-black border-2 py-4 bg-black">
+                        <p class="font-black duration-300 group-hover:text-black text-white text-lg">Join us now</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="w-full flex justify-end">
@@ -122,36 +120,117 @@
                 There's a trillion aliens cooler than you.
             </div>
         </div>
-        <div style="border-radius: 100% 0 100px 0 / 300px 100% 0 83%;"
-            class="w-full min-h-screen bg-gray-500 mt-10 pt-80 px-10 pb-20 lg:pt-96 text-justify">
+        <div class="w-full bg-white min-h-screen pt-96 px-10pb-14 lg:pt-96 text-justify">
             <div id="carousel">
-                <div>
-                    <div data-aos="flip-left"
-                        class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
-                        style="background-image: url(../images/elonmusk10.jpg);"></div>
+                <div class="w-96 h-96 transform max-w-md duration-300 scale-95 hover:scale-100 mx-2 bg-cover rounded-sm"
+                    style="background-image: url(../images/elonmusk.jpg);">
+                    <div class="w-96 h-96"></div>
                 </div>
-                <div>
-                    <div data-aos="flip-left"
-                        class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
-                        style="background-image: url(../images/spacecraft11.jpeg);">
+                <div class="w-96 h-96 transform max-w-md duration-300 scale-95 hover:scale-100 mx-2 bg-cover rounded-sm"
+                    style="background-image: url(../images/spacecraft11.jpeg);">
+                    <div class="w-96 h-96"></div>
+                </div>
+                <div class="w-96 h-96 transform max-w-md duration-300 scale-95 hover:scale-100 mx-2 bg-cover rounded-sm"
+                    style="background-image: url(../images/rocket12.jpg);">
+                    <div class="w-96 h-96"></div>
+                </div>
+                <div class="w-96 h-96 transform max-w-md duration-300 scale-95 hover:scale-100 mx-2 bg-cover rounded-sm"
+                    style="background-image: url(../images/spacecraft13.jpeg);">
+                    <div class="w-96 h-96"></div>
+                </div>
+                <div class="w-96 h-96 transform max-w-md duration-300 scale-95 hover:scale-100 mx-2 bg-cover rounded-sm"
+                    style="background-image: url(../images/fireinair8.jpg);">
+                    <div class="w-96 h-96"></div>
+                </div>
+                <div class="w-96 h-96 transform max-w-md duration-300 scale-95 hover:scale-100 mx-2 bg-cover rounded-sm"
+                    style="background-image:
+                    url(../images/spaceship.jpeg);">
+                    <div class="w-96 h-96"></div>
+                </div>
+            </div>
+            <div id="joinus" class="text-justify text-2xl flex flex-col gap-16 py-20">
+                <div class="w-full flex justify-end">
+                    <div data-aos="fade-up-left" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                        "You need to live in a dome initially, but over time you could terraform Mars to look like Earth
+                        and eventually walk around outside without anything on...
+                        <br />
+                        So it's a fixer-upper of a planet."
                     </div>
                 </div>
-                <div>
-                    <div data-aos="flip-left"
-                        class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
-                        style="background-image: url(../images/rocket12.jpg);">
+                <div data-aos="fade-up-right" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                    SpaceX (Space Exploration Technologies Corp.) is an American aerospace manufacturer, space
+                    transportation services and communications company headquartered in Hawthorne, California. It
+                    was founded in 2002 by
+                    <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank" rel="noopener noreferrer"
+                        class="uppercase underline">
+                        elon musk
+                    </a>
+                    with the goal of reducing space transportation costs to
+                    enable the colonization of Mars. SpaceX manufactures the
+                    <a href="https://www.spacex.com/vehicles/falcon-9/" target="_blank" rel="noopener noreferrer"
+                        class="underline uppercase">Falcon 9</a>
+                    and Falcon Heavy launch
+                    vehicles, several rocket engines, Dragon cargo, crew spacecraft and Starlink communications
+                    satellites.
+                </div>
+                <div class="w-full flex justify-end">
+                    <div data-aos="fade-up-left" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                        SpaceX's achievements include the first privately funded liquid-propellant rocket to reach orbit
+                        <a class="underline uppercase" href="https://en.wikipedia.org/wiki/Falcon_1" target="_blank"
+                            rel="noopener noreferrer">
+                            (Falcon 1 in 2008)
+                        </a>
+                        , the first private company to successfully launch, orbit, and recover a
+                        spacecraft (Dragon in 2010), the first private company to send a spacecraft to the International
+                        Space Station (Dragon in 2012), the first vertical take-off and vertical propulsive landing for
+                        an
+                        orbital rocket (Falcon 9 in 2015), the first reuse of an orbital rocket (Falcon 9 in 2017), and
+                        the first private company to send astronauts to orbit and to the International Space Station
+                        (SpaceX
+                        Crew Dragon Demo-2 in 2020). SpaceX has flown and reflown the Falcon 9 series of rockets over
+                        one hundred times.
                     </div>
                 </div>
-                <div>
-                    <div data-aos="flip-left"
-                        class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
-                        style="background-image: url(../images/spacecraft13.jpeg);">
-                    </div>
+                <div data-aos="fade-up-right" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                    SpaceX is developing a satellite megaconstellation named Starlink to provide
+                    commercial internet
+                    service. In January 2020 the Starlink constellation became the largest
+                    satellite constellation in
+                    the world. SpaceX is also developing Starship, a privately funded, fully
+                    reusable, super heavy-lift
+                    launch system for interplanetary spaceflight. Starship is intended to become
+                    the primary SpaceX
+                    orbital vehicle once operational, supplanting the existing Falcon 9, Falcon
+                    Heavy and Dragon fleet.
+                    Starship will be fully reusable and will have the highest payload capacity
+                    of any orbital rocket
+                    ever on its debut, scheduled for the early 2020s.
                 </div>
-                <div>
-                    <div data-aos="flip-left"
-                        class="w-60 h-80 mx-2 text-center bg-gray-500 bg-cover rounded-sm flex justify-center items-center"
-                        style="background-image: url(../images/fireinair8.jpg);">
+                <div class="w-full flex justify-end">
+                    <div data-aos="fade-up-left" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                        SpaceX's achievements include the first privately funded liquid-propellant rocket to reach orbit
+                        (Falcon 1 in 2008), the first private company to successfully launch, orbit, and recover a
+                        spacecraft (Dragon in 2010), the first private company to send a spacecraft to the International
+                        Space Station (Dragon in 2012), the first vertical take-off and vertical propulsive landing for
+                        an
+                        orbital rocket (Falcon 9 in 2015), the first reuse of an orbital rocket (Falcon 9 in 2017), and
+                        the
+                        first private company to send astronauts to orbit and to the International Space Station (SpaceX
+                        Crew Dragon Demo-2 in 2020). SpaceX has flown and reflown the Falcon 9 series of rockets over
+                        one
+                        hundred times.
+                        <br />
+                        <br />
+                        SpaceX is developing a satellite megaconstellation named Starlink to provide commercial internet
+                        service. In January 2020 the Starlink constellation became the largest satellite constellation
+                        in
+                        the world. SpaceX is also developing Starship, a privately funded, fully reusable, super
+                        heavy-lift
+                        launch system for interplanetary spaceflight. Starship is intended to become the primary SpaceX
+                        orbital vehicle once operational, supplanting the existing Falcon 9, Falcon Heavy and Dragon
+                        fleet.
+                        Starship will be fully reusable and will have the highest payload capacity of any orbital rocket
+                        ever on its debut, scheduled for the early 2020s.
                     </div>
                 </div>
             </div>
@@ -159,8 +238,9 @@
         </div>
     </main>
     <!-- Main content end -->
+
     <!-- Footer start -->
-    <footer class="bg-gray-900 w-full pb-20 flex flex-col justify-center items-center">
+    <footer class="bg-black w-fullpb-14 flex flex-col justify-center items-center">
         <div class="w-full h-6 bg-white rounded-b-3xl"></div>
         <div class="flex gap-8 mt-20">
             <a href="https://www.youtube.com/spacex" target="_blank">
@@ -183,11 +263,51 @@
             </a>
         </div>
         <hr class="w-2/3 border-t my-8" />
-        <div class="text-white">Something</div>
+        <div class="text-white w-full">
+            <a href="./about/index.html"></a>
+
+        </div>
     </footer>
     <!-- footer end -->
+
     <!-- JS file -->
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(() => {
+                AOS.refresh();
+            }, 1000);
+            $("#carousel").slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: "40px",
+                            slidesToShow: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: "40px",
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+                autoplaySpeed: 1000,
+                autoplay: true,
+            });
+        });
+    </script>
 </body>
 
 </html>

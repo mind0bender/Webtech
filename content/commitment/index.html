@@ -2,14 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS Framework -->
+    <link href="../tailwind.css" rel="stylesheet" />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <title>SpaceX</title>
 </head>
 
-<body>
-    commitment
+<body class="select-text select-text">
+    <div
+        class="z-50 fixed transform -skew-x-6 top-20 right-10 text-yellow-400 text-2xl font-black bg-black p-2 rounded-sm">
+        असुर्य</div>
+    <!-- Navbar starts -->
+    <nav style="padding-top: 1.5rem; padding-bottom: 1.5rem; padding-left: 3rem; padding-right: 3rem;"
+        class="z-50 border-gradient-x border-b-8 fixed z-10 top-0 left-0 w-full bg-black flex justify-between items-center shadow-2xl duration-300">
+        <a href="../index.html">
+            <!-- Logo -->
+            <img src="../../images/logo0.png" class="select-none w-48" alt="Space X">
+        </a>
+        <!-- Desktop menu start -->
+        <div class="hidden md:flex font-light gap-10">
+            <a class="navlink text-sm font-extralight uppercase transform text-gray-300 hover:text-white duration-200"
+                href="../ethics/index.html">Ethics</a>
+            <a class="navlink text-sm font-extralight uppercase transform text-gray-300 hover:text-white duration-200"
+                href="../about/index.html">about</a>
+            <a class="navlink text-sm font-extralight uppercase transform text-gray-300 hover:text-white duration-200"
+                href="../commitment/index.html">Commitment</a>
+        </div>
+        <!-- Desktop menu end -->
+        <!-- Mobile menu / sidebar start -->
+        <div id="sidecover" class="md:hidden fixed hidden w-full h-screen top-0 right-0 bg-black opacity-20"></div>
+        <div id="hamburger" class="md:hidden cursor-pointer w-8 h-6 flex flex-col justify-between items-center">
+            <div class="w-full h-1 rounded-full bg-white"></div>
+            <div class="w-full h-1 rounded-full bg-white"></div>
+            <div class="w-full h-1 rounded-full bg-white"></div>
+        </div>
+        <div id="sidebar"
+            class="-right-2/3 ease-out shadow-2xl flex items-center h-screen md:hidden flex-col fixed top-0 w-2/3 border-l bg-black py-5 font-light gap-8 duration-300 ">
+            <div class="w-full flex justify-end px-5">
+                <!-- cross image from flaticon -->
+                <img id="closesidebar" src="../../images/x-mark1.png" alt="close" class="select-none w-10 h-10 rounded-full filter invert cursor-pointer p-1 transform hover:scale-105
+                    duration-300" />
+            </div>
+
+            <a href="../ethics/index.html" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+                <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
+                    Ethics
+                </div>
+                <hr class="w-5/6 mt-1 w-full bordet-t" />
+            </a>
+            <a href="../about/index.html" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+                <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
+                    about
+                </div>
+                <hr class="w-5/6 mt-1 w-full bordet-t" />
+            </a>
+            <a href="../commitment/index.html" class="hover:translate-x-6 transform px-4 hover:px-0 duration-300 w-4/5">
+                <div class="navlink border-gray-300 uppercase text-gray-300 hover:text-white duration-200">
+                    Commitment
+                </div>
+                <hr class="w-5/6 mt-1 w-full bordet-t" />
+            </a>
+        </div>
+        <!-- Mobile menu / sidebar end -->
+    </nav>
+    <!-- navbar end -->
+
+    <!-- School Code & go to top -->
+    <a href="#" id="gototop"
+        class="border-2 z-50 cursor-pointer justify-center items-center fixed -bottom-40 right-10 w-14 h-14 bg-black rounded-full animate-bounce duration-300">
+        <!-- Image from flaticon-Freepik -->
+        <img src="../../images/arrow3.png" alt="Go to top"
+            class="select-none w-full h-full filter invert p-4 transform rotate-180 hover:-translate-y-2 duration-300" />
+    </a>
+
+    <!-- Main content start -->
+    <main class=" w-full min-h-screen overflow-x-hidden">
+        <div style="z-index: -10;" class="w-full flex h-screen fixed top-16 left-0 justify-center items-center">
+            <!-- Image from spacex.com page -->
+            <div style="background-image: url(../../images/rocket12.jpg);"
+                class="bg-cover w-full h-full shadow-inner shadow-2xl" alt="Rocket flying">
+            </div>
+        </div>
+        <div class="w-full h-screen p-10 flex flex-col justify-end gap-16 py-40">
+            <div class="uppercase break-words w-3/4 text-6xl font-black text-white">What we will be doing
+            </div>
+            <div class="overflow-hidden">
+                <a href="#ourcommitment">
+                    <div
+                        class="group w-1/2 md:w-1/4 btn px-10 duration-300 cursor-pointer hover:text-black border-2 py-4 bg-black">
+                        <p class="font-black duration-300 group-hover:text-black text-white text-lg">our commitments</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="w-full bg-white min-h-screen px-10pb-14 text-justify">
+            <div id="ourcommitment" class="text-justify text-2xl flex flex-col gap-16 py-20">
+                <div class="w-full flex justify-end">
+                    <div data-aos="fade-up-left" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                        SpaceX designs,manufactures, and lauches the world's most advanced rockets and spacecraft.
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                    The company was founded in 2002 by Elon Musk to revolutionize space transportation, with the
+                    ultimate goal of <span class="font-bold">making
+                        life multiplanetary</span> </div>
+                <div class="w-full flex justify-end">
+                    <div data-aos="fade-up-left" class="w-full lg:w-2/3 p-10 rounded-3xl shadow-xl bg-black text-white">
+                        SpaceX aims to get space tourism affordable for common humans.
+                        The company aims yo set up a permanent civilisation on mars.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- Main content end -->
+
+    <!-- Footer start -->
+    <footer class="bg-black w-fullpb-14 flex flex-col justify-center items-center">
+        <div class="w-full h-6 bg-white rounded-b-3xl"></div>
+        <div class="flex gap-8 mt-20">
+            <a href="https://www.youtube.com/spacex" target="_blank">
+                <div class="social bg-black duration-300 rounded-full border-2 hover:border-red-500">
+                    <!-- Image from flaticon-Freepik -->
+                    <img src="../../images/yt4.png" class="select-none w-6 h-6 m-1" alt="Youtube">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/spacex" target="_blank">
+                <div class="ig social bg-black duration-300 rounded-full border-2 hover:border-pink-700">
+                    <!-- Image from flaticon-Freepik -->
+                    <img src="../../images/ig2.png" class="select-none w-6 h-6 m-1" alt="Youtube">
+                </div>
+            </a>
+            <a href="https://www.twitter.com/spacex" target="_blank">
+                <div class="social bg-black duration-300 rounded-full border-2 hover:border-blue-400">
+                    <!-- Image from flaticon-Freepik -->
+                    <img src="../../images/twitter5.png" class="select-none w-6 h-6 m-1" alt="Youtube">
+                </div>
+            </a>
+        </div>
+        <hr class="w-2/3 border-t my-8" />
+        <div class="text-white">Something</div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- JS file -->
+    <script src="../index.js"></script>
 </body>
 
 </html>
